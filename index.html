@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chalermsri Coffee Roaster · บ้านเฉลิมศรี</title>
+  <meta name="description" content="Family-run coffee roaster at the Phra That Doi Saket junction, Chiang Mai. Hand-roasted beans from our farm on Doi Pa Miang Mae Sai. Hot 40฿ / iced 45฿. Visit us, call ahead, or contact for bulk orders and shipping." />
+  <meta name="theme-color" content="#3b1f12" />
+
+  <meta property="og:title" content="Chalermsri Coffee Roaster · บ้านเฉลิมศรี" />
+  <meta property="og:description" content="Hand-roasted coffee from our family farm on Doi Pa Miang Mae Sai. Doi Saket, Chiang Mai." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="th_TH" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="Chalermsri Coffee Roaster home">
+      <span class="brand-mark" aria-hidden="true">บ้านเฉลิมศรี</span>
+      <span class="brand-name">Chalermsri Coffee Roaster</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#story" data-i18n="nav.story">Story</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#visit" data-i18n="nav.visit">Visit</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+      <span data-lang="en">ไทย</span><span data-lang="th" hidden>EN</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Doi Saket · Chiang Mai</p>
+        <h1 id="hero-title" data-i18n="hero.title">Hand-roasted, every morning.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Single-origin beans from our family farm on Doi Pa Miang Mae Sai — roasted by hand at the Phra That Doi Saket junction, brewed with care.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+66877989668" data-i18n="hero.call">Call now</a>
+          <a class="btn btn-ghost" href="#visit" data-i18n="hero.directions">Get directions</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section" aria-labelledby="story-title">
+      <div class="section-inner two-col">
+        <div>
+          <p class="eyebrow" data-i18n="story.eyebrow">Our story</p>
+          <h2 id="story-title" data-i18n="story.title">From the mountain to your cup.</h2>
+          <p data-i18n="story.p1">Chalermsri began as a small intention on Doi Pa Miang Mae Sai — a family coffee farm tended slowly, season after season, from cherry to roast.</p>
+          <p data-i18n="story.p2">Today we hand-roast organic beans freshly in the shop, right beside Phra That Doi Saket. You’ll often see them drying in the sun by the door. Choose a blend to suit your taste, or take a bag home.</p>
+        </div>
+        <ul class="facts" aria-label="At a glance">
+          <li><strong data-i18n="story.fact1.k">Roasted</strong><span data-i18n="story.fact1.v">In-house, in small batches</span></li>
+          <li><strong data-i18n="story.fact2.k">Origin</strong><span data-i18n="story.fact2.v">Doi Pa Miang Mae Sai</span></li>
+          <li><strong data-i18n="story.fact3.k">Family-run</strong><span data-i18n="story.fact3.v">Since 2017</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="menu" class="section section-alt" aria-labelledby="menu-title">
+      <div class="section-inner">
+        <p class="eyebrow" data-i18n="menu.eyebrow">Menu</p>
+        <h2 id="menu-title" data-i18n="menu.title">A short, considered list.</h2>
+        <p class="muted" data-i18n="menu.note">Indicative prices from in-shop reviews. Full menu coming soon.</p>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3 data-i18n="menu.hot.t">Hot coffee</h3>
+            <ul>
+              <li><span data-i18n="menu.hot.1">Espresso · Americano · Latte</span><span class="price">฿40</span></li>
+            </ul>
+          </article>
+          <article class="menu-card">
+            <h3 data-i18n="menu.iced.t">Iced coffee</h3>
+            <ul>
+              <li><span data-i18n="menu.iced.1">Iced black · Iced latte · Signature</span><span class="price">฿45</span></li>
+            </ul>
+          </article>
+          <article class="menu-card">
+            <h3 data-i18n="menu.beans.t">Whole bean &amp; bites</h3>
+            <ul>
+              <li><span data-i18n="menu.beans.1">Curated single-origin beans</span><span class="price" data-i18n="menu.beans.from">from ฿50</span></li>
+              <li><span data-i18n="menu.beans.2">Toast &amp; light bites</span><span class="price" data-i18n="menu.beans.askshop">In shop</span></li>
+              <li><span data-i18n="menu.beans.3">Bulk / wholesale</span><span class="price" data-i18n="menu.beans.ask">Ask</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section" aria-labelledby="reviews-title">
+      <div class="section-inner">
+        <p class="eyebrow" data-i18n="reviews.eyebrow">What guests say</p>
+        <h2 id="reviews-title">
+          <span data-i18n="reviews.title">100% recommend on Google</span>
+          <span class="rating" aria-label="5 out of 5 stars">★★★★★</span>
+        </h2>
+        <div class="reviews-grid">
+          <figure class="review">
+            <blockquote data-i18n="reviews.r1.q">“Come here, enjoy the relaxing atmosphere and absolutely fantastic coffee. This is not propaganda, this is the truth. You will love.”</blockquote>
+            <figcaption>— Roland Peter <span class="muted">· Google</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote data-i18n="reviews.r2.q">“Relaxing atmosphere.”</blockquote>
+            <figcaption>— Georgia Armstrong <span class="muted">· Google</span></figcaption>
+          </figure>
+        </div>
+        <p class="reviews-cta">
+          <a class="btn btn-ghost" href="https://maps.app.goo.gl/kHCPMwxkFE3w9uJe6" target="_blank" rel="noopener" data-i18n="reviews.more">Read all reviews on Google</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="visit" class="section section-alt" aria-labelledby="visit-title">
+      <div class="section-inner two-col">
+        <div>
+          <p class="eyebrow" data-i18n="visit.eyebrow">Visit</p>
+          <h2 id="visit-title" data-i18n="visit.title">At the Phra That Doi Saket junction.</h2>
+          <dl class="info">
+            <dt data-i18n="visit.address.k">Address</dt>
+            <dd data-i18n="visit.address.v">1007 Choeng Doi, Doi Saket, Chiang Mai 50220</dd>
+            <dt data-i18n="visit.landmark.k">Landmark</dt>
+            <dd data-i18n="visit.landmark.v">Three-way junction in front of Wat Phra That Doi Saket</dd>
+            <dt data-i18n="visit.hours.k">Hours</dt>
+            <dd data-i18n="visit.hours.v">From 08:00 — closing time varies, please call ahead.</dd>
+            <dt data-i18n="visit.phone.k">Phone</dt>
+            <dd><a href="tel:+66877989668">+66 87 798 9668</a></dd>
+            <dt data-i18n="visit.parking.k">Parking</dt>
+            <dd data-i18n="visit.parking.v">Limited — a couple of spots out front.</dd>
+          </dl>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/kHCPMwxkFE3w9uJe6" target="_blank" rel="noopener" data-i18n="visit.directions">Open in Google Maps</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            title="Chalermsri Coffee Roaster on Google Maps"
+            src="https://www.google.com/maps?q=Chalermsri+Coffee+Roaster+1007+Choeng+Doi+Doi+Saket+Chiang+Mai+50220&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-inner two-col">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Bulk orders, shipping &amp; wholesale.</h2>
+          <p data-i18n="contact.p1">Want beans shipped, or buying for a café or office? Send us a note and we’ll get back to you within a day or two.</p>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.phone">Phone</span> · <a href="tel:+66877989668">+66 87 798 9668</a></li>
+            <li><span data-i18n="contact.email">Email</span> · <a href="mailto:chalermsrihouse2017@gmail.com">chalermsrihouse2017@gmail.com</a></li>
+            <li><span data-i18n="contact.fb">Facebook</span> · <a href="https://www.facebook.com/chalermsricoffeehouse/" target="_blank" rel="noopener">@chalermsricoffeehouse</a></li>
+            <li><span data-i18n="contact.yt">YouTube</span> · <a href="https://www.youtube.com/@icecoffee7118" target="_blank" rel="noopener">@icecoffee7118</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>
+            <span data-i18n="form.name">Your name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span data-i18n="form.email">Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>
+            <span data-i18n="form.kind">I’m asking about</span>
+            <select name="kind">
+              <option data-i18n="form.kind.shipping">Shipping beans</option>
+              <option data-i18n="form.kind.bulk">Bulk / wholesale</option>
+              <option data-i18n="form.kind.visit">Visiting the shop</option>
+              <option data-i18n="form.kind.other">Something else</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary" data-i18n="form.submit">Send</button>
+          <p class="form-note muted" data-i18n="form.note">This opens your email app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <div>
+        <p class="brand-mark" aria-hidden="true">บ้านเฉลิมศรี</p>
+        <p class="muted">Chalermsri Coffee Roaster · Doi Saket, Chiang Mai</p>
+      </div>
+      <p class="muted">© <span id="year"></span> Chalermsri Coffee Roaster</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
