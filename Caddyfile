@@ -1,0 +1,30 @@
+{
+	admin off
+	persist_config off
+	auto_https off
+}
+
+:{$PORT:8080} {
+	root * /srv
+	encode zstd gzip
+	file_server
+
+	@html {
+		path *.html
+	}
+	header @html Cache-Control "no-cache"
+
+	@assets {
+		path *.css *.js *.svg *.png *.jpg *.jpeg *.webp *.woff2
+	}
+	header @assets Cache-Control "public, max-age=604800, immutable"
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "geolocation=(), microphone=(), camera=()"
+		-Server
+	}
+
+	try_files {path} {path}/ /index.html
+}
