@@ -184,4 +184,14 @@
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  const heroVideo = document.querySelector(".hero-video");
+  if (heroVideo) {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const saveData = navigator.connection?.saveData;
+    if (reduce.matches || saveData) {
+      heroVideo.removeAttribute("autoplay");
+      heroVideo.pause();
+    }
+  }
 })();

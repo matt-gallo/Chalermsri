@@ -15,7 +15,7 @@
 	header @html Cache-Control "no-cache"
 
 	@assets {
-		path *.css *.js *.svg *.png *.jpg *.jpeg *.webp *.woff2
+		path *.css *.js *.svg *.png *.jpg *.jpeg *.webp *.woff2 *.mp4 *.webm
 	}
 	header @assets Cache-Control "public, max-age=604800, immutable"
 
