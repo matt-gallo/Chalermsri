@@ -192,6 +192,12 @@
     if (reduce.matches || saveData) {
       heroVideo.removeAttribute("autoplay");
       heroVideo.pause();
+    } else {
+      heroVideo.addEventListener("ended", () => {
+        heroVideo.currentTime = 0;
+        heroVideo.play().catch(() => {});
+      });
+      heroVideo.play().catch(() => {});
     }
   }
 })();
