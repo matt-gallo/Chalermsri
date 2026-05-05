@@ -9,15 +9,15 @@
 	encode zstd gzip
 	file_server
 
-	@html {
-		path *.html
+	@nocache {
+		path *.html *.css *.js
 	}
-	header @html Cache-Control "no-cache"
+	header @nocache Cache-Control "no-cache, must-revalidate"
 
-	@assets {
-		path *.css *.js *.svg *.png *.jpg *.jpeg *.webp *.woff2 *.mp4 *.webm
+	@media {
+		path *.svg *.png *.jpg *.jpeg *.webp *.woff2 *.mp4 *.webm *.ico
 	}
-	header @assets Cache-Control "public, max-age=604800, immutable"
+	header @media Cache-Control "public, max-age=604800, immutable"
 
 	header {
 		X-Content-Type-Options "nosniff"
